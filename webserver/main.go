@@ -18,6 +18,7 @@ func hello(writer http.ResponseWriter, request *http.Request) {
 	fmt.Fprintf(writer, "<h1>hello %s</h1>", info)
 }
 
+// Using rand.Seed from go.pkg.dev example
 func magic8ball(writer http.ResponseWriter, request *http.Request) {
 	rand.Seed(time.Now().UnixNano())
 	answers := []string{
