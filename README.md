@@ -1,1 +1,1 @@
-# test-webserver
+# Learning Golang test webserver
